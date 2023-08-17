@@ -5,7 +5,7 @@ import pygame
 import os
 
 
-def text_to_speech(string, lang='tr', is_speed=False, speed_factor=1.5, delay: float = 1):
+def text_to_speech(string, lang='tr', is_speed=False, speed_factor=1.5, delay=1.0):
     try:
         tts = gTTS(string, lang=lang)
         tts.save('output.mp3')
